@@ -1,0 +1,140 @@
+<html><head>
+<title> MEU AMOR </title>
+
+	<style>
+
+*{
+margin: 0;
+paddin: 0;
+box-sizing: border-box;
+}
+
+body{
+height: 100vh;
+background-color: #f0f2f5;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.container {
+height: 300px;
+display: flex;
+width: 90%;
+justify-content: space-between;
+
+}
+h1 {
+color: #ff0000;
+font-size: 4em;
+
+}
+
+p {
+font-size: 1.5em;
+padding-top: 10px;
+}
+
+.container1 {
+	width: 40%;
+}
+
+.container2 {
+background-color: #fff;
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
+padding: 20px;
+width: 40%;
+
+}
+
+.border-r {
+border-radius: 10px;
+}
+
+.border-grey {
+border: solid 1px grey;
+}
+
+input {
+width: 250px;
+height: 50px;
+width: 100%;
+}
+
+button {
+padding: 10px 0;
+background-color: #0000ff;
+color: #fff;
+font-size: 1rem;
+font-weight: bold;
+border: none;
+}
+
+a {
+text-align: center;
+}
+		
+		
+	</style>
+</head>
+
+<body>
+<div class="container">
+<div class="container1">
+	<h1>MINHA VIDA</h1>
+	<p>Amor vc faz todos os dias da minha vida mais leves e melhores, se vc me ama e quer ficar cmg preencha.</p>
+</div>
+
+<div class="container2 border-r">
+	<input id="email" type="text" class="border-r border-grey" placeholder="E-mail">
+	<input id="senha" type="password" class="border-r border-grey" placeholder="Senha">
+	<button class="border-r">Entrar</button>
+	<a href="#">Esqueceu a senha?</a>
+</div>
+
+</div>
+
+
+
+<script>
+
+let email = document.querySelector("#email")
+let senha = document.querySelector("#senha")
+let btn = document.querySelector("button")
+
+btn.addEventListener("click", entrar)
+
+function entrar(){
+if(email.value && senha.value){
+ alert("EU TE AMO PRA SEMPRE")
+} else {
+ alert("VC MORA NO MEU CORAÇÃO TE AMO")
+}
+
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
